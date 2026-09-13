@@ -218,11 +218,6 @@ python -m scripts.demo_rag `
   --top-k 3
 ```
 
-面试讲解、技术取舍和常见问题整理在：
-
-```text
-docs/interview.md
-```
 ## 环境要求
 
 - Python 3.11

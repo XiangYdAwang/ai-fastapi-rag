@@ -19,3 +19,6 @@ evaluation/*document_ids.json
 
 evaluation/project_corpus/
 evaluation/project_corpus_manifest.json
+
+docs/interview.md
+docs/private/
