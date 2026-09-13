@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI FastAPI RAG</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">RAG KNOWLEDGE BASE</p>
+      <h1>AI FastAPI RAG</h1>
+      <p class="subtitle">上传文档、生成向量，并进行带引用的流式问答。</p>
+    </div>
+    <div id="service-status" class="status status-checking">检查服务中</div>
+  </header>
+
+  <main class="layout">
+    <section class="card">
+      <div class="section-heading">
+        <span class="step">01</span>
+        <div>
+          <h2>添加知识库文档</h2>
+          <p>支持 TXT、Markdown、PDF 和 DOCX。</p>
+        </div>
+      </div>
+
+      <label class="dropzone" for="file-input">
+        <input id="file-input" type="file" accept=".txt,.md,.pdf,.docx">
+        <strong>选择文档</strong>
+        <span>上传后会自动解析、分块并生成 Embedding。</span>
+      </label>
+
+      <button id="upload-button" class="primary-button" type="button">
+        上传并向量化
+      </button>
+
+      <div id="upload-status" class="status-line">尚未上传文档</div>
+
+      <dl class="document-meta">
+        <div>
+          <dt>文件名</dt>
+          <dd id="document-name">-</dd>
+        </div>
+        <div>
+          <dt>文本块</dt>
+          <dd id="chunk-count">-</dd>
+        </div>
+        <div>
+          <dt>文档 ID</dt>
+          <dd id="document-id">-</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="card">
+      <div class="section-heading">
+        <span class="step">02</span>
+        <div>
+          <h2>向知识库提问</h2>
+          <p>回答会通过 SSE 流式返回，并附带检索来源。</p>
+        </div>
+      </div>
+
+      <textarea id="question-input" rows="5" placeholder="例如：pgvector 在这个项目中有什么作用？"></textarea>
+
+      <label class="checkbox-row">
+        <input id="only-current-document" type="checkbox" checked>
+        仅搜索刚上传的文档
+      </label>
+
+      <button id="ask-button" class="primary-button" type="button">
+        开始流式问答
+      </button>
+
+      <div id="chat-status" class="status-line">等待提问</div>
+
+      <div id="answer-box" class="answer-box" aria-live="polite"></div>
+
+      <div class="sources-heading">
+        <h3>引用来源</h3>
+      </div>
+      <div id="sources-list" class="sources-list"></div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

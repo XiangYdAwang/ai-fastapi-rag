@@ -33,6 +33,7 @@
 - Rerank 失败时自动降级到 RRF 排序。
 - 使用 Langfuse 记录 Embedding、Rerank 和 RAG Chat 调用链。
 - 提供可重复运行的检索评测脚本。
+- 提供极简 Web UI，可直接上传文档并进行流式 RAG 问答。
 
 ## 系统架构
 
@@ -191,6 +192,23 @@ with httpx.stream(
 ```
 
 流式调用完成后仍会写入 Langfuse，Trace 名称为 `rag-chat`。
+## 极简 Web UI
+
+启动 FastAPI 后打开：
+
+```text
+http://127.0.0.1:8000/ui
+```
+
+页面支持：
+
+- 上传 TXT、Markdown、PDF、DOCX。
+- 自动调用 Embedding 接口。
+- 显示文档 ID、分块数量和向量化结果。
+- 输入问题进行 SSE 流式 RAG 问答。
+- 展示引用来源和相关度分数。
+
+页面由 FastAPI 直接托管，不需要 Node.js 或额外前端服务。
 ## 一键演示
 
 启动 FastAPI 后执行：
