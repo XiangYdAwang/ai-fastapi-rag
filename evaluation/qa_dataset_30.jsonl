@@ -1,0 +1,30 @@
+{"id":"pdf-01","question":"What is pgvector?","expected_document":"sample.pdf","expected_keywords":["PostgreSQL extension","vector storage"]}
+{"id":"pdf-02","question":"What capability does pgvector add to PostgreSQL?","expected_document":"sample.pdf","expected_keywords":["vector storage","similarity search"]}
+{"id":"pdf-03","question":"What kind of data does pgvector store?","expected_document":"sample.pdf","expected_keywords":["vector storage"]}
+{"id":"pdf-04","question":"What search capability does pgvector provide?","expected_document":"sample.pdf","expected_keywords":["similarity search"]}
+{"id":"pdf-05","question":"Which database does pgvector extend?","expected_document":"sample.pdf","expected_keywords":["PostgreSQL extension"]}
+{"id":"pdf-06","question":"What is LiteLLM?","expected_document":"sample.pdf","expected_keywords":["unified interface"]}
+{"id":"pdf-07","question":"What does LiteLLM unify?","expected_document":"sample.pdf","expected_keywords":["language model providers"]}
+{"id":"pdf-08","question":"Which component provides a unified interface for model providers?","expected_document":"sample.pdf","expected_keywords":["unified interface","language model providers"]}
+{"id":"pdf-09","question":"Which tool allows different language model providers to be called through one interface?","expected_document":"sample.pdf","expected_keywords":["LiteLLM","unified interface"]}
+{"id":"pdf-10","question":"What is FastAPI used for in this project?","expected_document":"sample.pdf","expected_keywords":["backend web framework"]}
+{"id":"pdf-11","question":"Which framework serves as the backend for the RAG project?","expected_document":"sample.pdf","expected_keywords":["FastAPI","backend web framework"]}
+{"id":"pdf-12","question":"Is FastAPI used as a database or a web framework?","expected_document":"sample.pdf","expected_keywords":["backend web framework"]}
+{"id":"pdf-13","question":"Which component is described as the backend web framework?","expected_document":"sample.pdf","expected_keywords":["FastAPI"]}
+{"id":"pdf-14","question":"Why was this PDF created?","expected_document":"sample.pdf","expected_keywords":["local testing"]}
+{"id":"pdf-15","question":"What is the purpose of this PDF?","expected_document":"sample.pdf","expected_keywords":["local testing"]}
+{"id":"txt-01","question":"FastAPI 是什么？","expected_document":"sample.txt","expected_keywords":["Python Web 框架"]}
+{"id":"txt-02","question":"FastAPI 的核心定位是什么？","expected_document":"sample.txt","expected_keywords":["现代","快速","Python Web 框架"]}
+{"id":"txt-03","question":"pgvector 为 PostgreSQL 提供了哪些能力？","expected_document":"sample.txt","expected_keywords":["向量存储","相似度检索"]}
+{"id":"txt-04","question":"pgvector 在项目中的作用是什么？","expected_document":"sample.txt","expected_keywords":["pgvector","向量存储"]}
+{"id":"txt-05","question":"哪个组件负责向量存储？","expected_document":"sample.txt","expected_keywords":["pgvector","向量存储"]}
+{"id":"txt-06","question":"哪个扩展支持相似度检索？","expected_document":"sample.txt","expected_keywords":["pgvector","相似度检索"]}
+{"id":"txt-07","question":"LiteLLM 的作用是什么？","expected_document":"sample.txt","expected_keywords":["统一调用","大模型供应商"]}
+{"id":"txt-08","question":"LiteLLM 解决了什么问题？","expected_document":"sample.txt","expected_keywords":["统一调用","大模型供应商"]}
+{"id":"txt-09","question":"哪个组件用于统一调用大模型供应商？","expected_document":"sample.txt","expected_keywords":["LiteLLM","统一调用"]}
+{"id":"txt-10","question":"LiteLLM 能统一调用什么？","expected_document":"sample.txt","expected_keywords":["大模型供应商"]}
+{"id":"txt-11","question":"Langfuse 的作用是什么？","expected_document":"sample.txt","expected_keywords":["Langfuse","追踪"]}
+{"id":"txt-12","question":"Langfuse 能追踪什么？","expected_document":"sample.txt","expected_keywords":["大模型调用"]}
+{"id":"txt-13","question":"Langfuse 可以分析什么内容？","expected_document":"sample.txt","expected_keywords":["分析","大模型调用"]}
+{"id":"txt-14","question":"哪个组件用于分析大模型调用过程？","expected_document":"sample.txt","expected_keywords":["Langfuse","分析"]}
+{"id":"txt-15","question":"哪个工具负责调用追踪和分析？","expected_document":"sample.txt","expected_keywords":["Langfuse","追踪","分析"]}

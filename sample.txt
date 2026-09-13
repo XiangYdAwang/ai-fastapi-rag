@@ -1,0 +1,7 @@
+FastAPI 是一个现代、快速的 Python Web 框架。
+
+pgvector 为 PostgreSQL 提供向量存储和相似度检索能力。
+
+LiteLLM 用于统一调用不同的大模型供应商。
+
+Langfuse 用于追踪和分析大模型调用过程。

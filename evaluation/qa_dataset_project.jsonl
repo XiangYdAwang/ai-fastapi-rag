@@ -1,0 +1,30 @@
+{"id": "project-01", "question": "Which endpoint uploads a document?", "expected_document": "app__api__documents_py.md", "expected_keywords": ["/upload"]}
+{"id": "project-02", "question": "Which endpoint generates embeddings for a document?", "expected_document": "app__api__documents_py.md", "expected_keywords": ["/{document_id}/embed"]}
+{"id": "project-03", "question": "Which route performs retrieval search?", "expected_document": "app__api__search_py.md", "expected_keywords": ["/search"]}
+{"id": "project-04", "question": "Which route performs RAG chat?", "expected_document": "app__api__chat_py.md", "expected_keywords": ["/chat"]}
+{"id": "project-05", "question": "What is the default text chunk size?", "expected_document": "app__core__config_py.md", "expected_keywords": ["chunk_size: int = 1000"]}
+{"id": "project-06", "question": "What is the default chunk overlap?", "expected_document": "app__core__config_py.md", "expected_keywords": ["chunk_overlap: int = 200"]}
+{"id": "project-07", "question": "What embedding dimension is configured?", "expected_document": "app__core__config_py.md", "expected_keywords": ["embedding_dimension: int = 1024"]}
+{"id": "project-08", "question": "Which embedding model is configured?", "expected_document": "app__core__config_py.md", "expected_keywords": ["BAAI/bge-m3"]}
+{"id": "project-09", "question": "Which rerank model is configured?", "expected_document": "app__core__config_py.md", "expected_keywords": ["BAAI/bge-reranker-v2-m3"]}
+{"id": "project-10", "question": "What is the rerank timeout?", "expected_document": "app__core__config_py.md", "expected_keywords": ["rerank_timeout_seconds: float = 30.0"]}
+{"id": "project-11", "question": "What constant is used for reciprocal rank fusion?", "expected_document": "app__services__search_service_py.md", "expected_keywords": ["RRF_K = 60"]}
+{"id": "project-12", "question": "How is the hybrid candidate limit calculated?", "expected_document": "app__services__search_service_py.md", "expected_keywords": ["candidate_limit = max(request.top_k * 4, 20)"]}
+{"id": "project-13", "question": "Which fields expose vector, lexical, retrieval, and rerank scores?", "expected_document": "app__schemas__search_py.md", "expected_keywords": ["vector_score", "lexical_score", "retrieval_score", "rerank_score"]}
+{"id": "project-14", "question": "What happens when the rerank request fails?", "expected_document": "app__services__rerank_service_py.md", "expected_keywords": ["Rerank request failed", "return results[:top_k]"]}
+{"id": "project-15", "question": "Which standard-library modules parse DOCX files?", "expected_document": "app__services__document_parser_py.md", "expected_keywords": ["ZipFile", "ElementTree"]}
+{"id": "project-16", "question": "Which library parses PDF files?", "expected_document": "app__services__document_parser_py.md", "expected_keywords": ["PdfReader"]}
+{"id": "project-17", "question": "Which document formats are allowed?", "expected_document": "app__services__document_service_py.md", "expected_keywords": ["ALLOWED_SUFFIXES", ".pdf", ".docx"]}
+{"id": "project-18", "question": "Which setting controls the maximum upload size?", "expected_document": "app__services__document_service_py.md", "expected_keywords": ["max_upload_size"]}
+{"id": "project-19", "question": "Which session factory is used by the API?", "expected_document": "app__db__session_py.md", "expected_keywords": ["AsyncSessionLocal"]}
+{"id": "project-20", "question": "Which database table stores documents?", "expected_document": "app__models__document_py.md", "expected_keywords": ["__tablename__ = \"documents\""]}
+{"id": "project-21", "question": "Which database type stores chunk metadata?", "expected_document": "app__models__document_chunk_py.md", "expected_keywords": ["JSONB", "metadata"]}
+{"id": "project-22", "question": "Which extension enables vector columns?", "expected_document": "docker__initdb__001-enable-pgvector_sql.md", "expected_keywords": ["CREATE EXTENSION IF NOT EXISTS vector"]}
+{"id": "project-23", "question": "Which extension enables trigram search?", "expected_document": "docker__initdb__002-enable-pgtrgm_sql.md", "expected_keywords": ["CREATE EXTENSION IF NOT EXISTS pg_trgm"]}
+{"id": "project-24", "question": "Which metric records first-result hit rate?", "expected_document": "scripts__evaluate_retrieval_py.md", "expected_keywords": ["hit_rate_at_1"]}
+{"id": "project-25", "question": "How is MRR accumulated?", "expected_document": "scripts__evaluate_retrieval_py.md", "expected_keywords": ["reciprocal_rank_sum"]}
+{"id": "project-26", "question": "Which test verifies rerank fallback on errors?", "expected_document": "tests__test_rerank_service_py.md", "expected_keywords": ["test_rerank_falls_back_on_error"]}
+{"id": "project-27", "question": "Which log message confirms that Langfuse tracing is enabled?", "expected_document": "app__core__observability_py.md", "expected_keywords": ["Langfuse tracing enabled"]}
+{"id": "project-28", "question": "Which setting provides the Langfuse host to the SDK?", "expected_document": "app__core__observability_py.md", "expected_keywords": ["settings.langfuse_host"]}
+{"id": "project-29", "question": "Which setting limits RAG context size?", "expected_document": "app__services__chat_service_py.md", "expected_keywords": ["chat_max_context_chars"]}
+{"id": "project-30", "question": "Which default chat model is configured?", "expected_document": "app__core__config_py.md", "expected_keywords": ["openai/Qwen/Qwen2.5-7B-Instruct"]}

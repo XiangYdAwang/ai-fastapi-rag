@@ -1,0 +1,10 @@
+{"id":"pdf-01","question":"What is pgvector used for?","expected_document":"sample.pdf","expected_keywords":["vector storage","similarity search"]}
+{"id":"pdf-02","question":"What does LiteLLM provide?","expected_document":"sample.pdf","expected_keywords":["unified interface","language model providers"]}
+{"id":"pdf-03","question":"What role does FastAPI play in this project?","expected_document":"sample.pdf","expected_keywords":["backend web framework","RAG project"]}
+{"id":"txt-01","question":"FastAPI 是什么？","expected_document":"sample.txt","expected_keywords":["Python Web 框架"]}
+{"id":"txt-02","question":"Langfuse 用来做什么？","expected_document":"sample.txt","expected_keywords":["追踪","分析","大模型调用"]}
+{"id":"txt-03","question":"LiteLLM 在项目中有什么作用？","expected_document":"sample.txt","expected_keywords":["统一调用","大模型供应商"]}
+{"id":"txt-04","question":"pgvector 能为 PostgreSQL 提供什么能力？","expected_document":"sample.txt","expected_keywords":["向量存储","相似度检索"]}
+{"id":"txt-05","question":"哪个组件用于统一调用不同大模型供应商？","expected_document":"sample.txt","expected_keywords":["LiteLLM","统一调用"]}
+{"id":"txt-06","question":"哪个组件用于追踪大模型调用过程？","expected_document":"sample.txt","expected_keywords":["Langfuse","追踪"]}
+{"id":"txt-07","question":"哪个组件为 PostgreSQL 提供向量检索能力？","expected_document":"sample.txt","expected_keywords":["pgvector","向量"]}

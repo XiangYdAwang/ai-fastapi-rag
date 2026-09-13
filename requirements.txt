@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pydantic-settings
+python-multipart
+sqlalchemy[asyncio]
+asyncpg
+alembic
+pgvector
+aiofiles
+litellm
+langfuse>=2.6,<3
+pypdf
+httpx

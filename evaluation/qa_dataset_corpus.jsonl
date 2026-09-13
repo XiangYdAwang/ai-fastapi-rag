@@ -1,0 +1,36 @@
+{"id": "corpus-01-q1", "question": "Which port does the Orion RAG Platform expose for FastAPI?", "expected_document": "architecture_overview.md", "expected_keywords": ["8000"]}
+{"id": "corpus-01-q2", "question": "What is the PostgreSQL container port in the Orion RAG Platform?", "expected_document": "architecture_overview.md", "expected_keywords": ["5432"]}
+{"id": "corpus-02-q1", "question": "What prefix is used by the public API?", "expected_document": "api_gateway.md", "expected_keywords": ["/api"]}
+{"id": "corpus-02-q2", "question": "What is the development rate limit of the API?", "expected_document": "api_gateway.md", "expected_keywords": ["60 requests per minute"]}
+{"id": "corpus-03-q1", "question": "Which document formats are accepted by the ingestion endpoint?", "expected_document": "document_ingestion.md", "expected_keywords": ["txt", "pdf", "docx"]}
+{"id": "corpus-03-q2", "question": "What is the maximum upload size in the ingestion pipeline?", "expected_document": "document_ingestion.md", "expected_keywords": ["20 MB"]}
+{"id": "corpus-04-q1", "question": "What is the default chunk size?", "expected_document": "text_chunking.md", "expected_keywords": ["1000 characters"]}
+{"id": "corpus-04-q2", "question": "What chunk overlap is used by the text splitter?", "expected_document": "text_chunking.md", "expected_keywords": ["200 characters"]}
+{"id": "corpus-05-q1", "question": "Which embedding model is used by the pipeline?", "expected_document": "embedding_pipeline.md", "expected_keywords": ["BAAI/bge-m3"]}
+{"id": "corpus-05-q2", "question": "How many dimensions does each embedding vector have?", "expected_document": "embedding_pipeline.md", "expected_keywords": ["1024"]}
+{"id": "corpus-06-q1", "question": "Which index type is used for vector search?", "expected_document": "vector_search.md", "expected_keywords": ["HNSW"]}
+{"id": "corpus-06-q2", "question": "Which distance metric is used by the vector index?", "expected_document": "vector_search.md", "expected_keywords": ["cosine distance"]}
+{"id": "corpus-07-q1", "question": "What value of RRF_K is used in Reciprocal Rank Fusion?", "expected_document": "hybrid_search.md", "expected_keywords": ["60"]}
+{"id": "corpus-07-q2", "question": "How is the hybrid candidate limit calculated?", "expected_document": "hybrid_search.md", "expected_keywords": ["maximum of 20", "four times top_k"]}
+{"id": "corpus-08-q1", "question": "Which model is used for reranking?", "expected_document": "rerank_pipeline.md", "expected_keywords": ["BAAI/bge-reranker-v2-m3"]}
+{"id": "corpus-08-q2", "question": "What happens when the rerank service fails?", "expected_document": "rerank_pipeline.md", "expected_keywords": ["falls back", "RRF ranking"]}
+{"id": "corpus-09-q1", "question": "What is the maximum RAG context size in characters?", "expected_document": "rag_chat.md", "expected_keywords": ["12000 characters"]}
+{"id": "corpus-09-q2", "question": "What is the default generation temperature?", "expected_document": "rag_chat.md", "expected_keywords": ["0.2"]}
+{"id": "corpus-10-q1", "question": "Which Langfuse host is used for tracing?", "expected_document": "langfuse_tracing.md", "expected_keywords": ["us.cloud.langfuse.com"]}
+{"id": "corpus-10-q2", "question": "Which trace name is used for reranking?", "expected_document": "langfuse_tracing.md", "expected_keywords": ["rerank-results"]}
+{"id": "corpus-11-q1", "question": "Which library provides the unified model interface?", "expected_document": "litellm_routing.md", "expected_keywords": ["LiteLLM"]}
+{"id": "corpus-11-q2", "question": "Which provider endpoint is used for OpenAI-compatible calls?", "expected_document": "litellm_routing.md", "expected_keywords": ["SiliconFlow"]}
+{"id": "corpus-12-q1", "question": "Which tables store documents and chunks?", "expected_document": "postgres_schema.md", "expected_keywords": ["documents", "document_chunks"]}
+{"id": "corpus-12-q2", "question": "What database type stores chunk metadata?", "expected_document": "postgres_schema.md", "expected_keywords": ["JSONB"]}
+{"id": "corpus-13-q1", "question": "Which tool manages database schema versions?", "expected_document": "alembic_migrations.md", "expected_keywords": ["Alembic"]}
+{"id": "corpus-13-q2", "question": "Which command applies all pending migrations?", "expected_document": "alembic_migrations.md", "expected_keywords": ["alembic upgrade head"]}
+{"id": "corpus-14-q1", "question": "Where are original uploaded files stored?", "expected_document": "file_storage.md", "expected_keywords": ["data/uploads"]}
+{"id": "corpus-14-q2", "question": "What name is used for each stored file?", "expected_document": "file_storage.md", "expected_keywords": ["UUID"]}
+{"id": "corpus-15-q1", "question": "Which local file contains secrets and is excluded from Git?", "expected_document": "security_basics.md", "expected_keywords": [".env"]}
+{"id": "corpus-15-q2", "question": "Where are API keys and Langfuse secrets loaded from?", "expected_document": "security_basics.md", "expected_keywords": ["environment variables"]}
+{"id": "corpus-16-q1", "question": "How many texts are processed in one embedding batch?", "expected_document": "performance_tuning.md", "expected_keywords": ["32"]}
+{"id": "corpus-16-q2", "question": "What is the maximum allowed top_k value?", "expected_document": "performance_tuning.md", "expected_keywords": ["20"]}
+{"id": "corpus-17-q1", "question": "Which endpoint checks database connectivity?", "expected_document": "monitoring_health.md", "expected_keywords": ["/health/db"]}
+{"id": "corpus-17-q2", "question": "What does Langfuse record for model calls?", "expected_document": "monitoring_health.md", "expected_keywords": ["latency", "token usage"]}
+{"id": "corpus-18-q1", "question": "Has RAGFlow integration already been implemented?", "expected_document": "ragflow_roadmap.md", "expected_keywords": ["planned", "not yet implemented"]}
+{"id": "corpus-18-q2", "question": "What should remain stable during RAGFlow integration?", "expected_document": "ragflow_roadmap.md", "expected_keywords": ["FastAPI API"]}
