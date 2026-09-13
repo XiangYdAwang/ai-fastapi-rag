@@ -16,3 +16,6 @@ evaluation/results/*.json
 evaluation/*document_ids.json
 
 *.log
+
+evaluation/project_corpus/
+evaluation/project_corpus_manifest.json
